@@ -1,7 +1,6 @@
 package routes
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/William-Libero/social-networking-posts-and-rabbitmq/controllers"
@@ -13,6 +12,7 @@ func HandleRoutes() {
 	r := mux.NewRouter()
 	r.Use(middlewares.ContentTypeMiddleWare)
 	r.HandleFunc("/", controllers.Home).Methods("Get")
+	r.HandleFunc("/likePost/{id}", controllers.LikePost).Methods("Post")
+	r.HandleFunc("/createPost", controllers.CreatePost).Methods("Post")
 	http.ListenAndServe(":8000", r)
-	fmt.Println("Server running on port 8000")
 }
