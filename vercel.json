@@ -1,9 +1,0 @@
-{
-  "github": {
-    "silent": true
-  },
-  "framework": null,
-  "installCommand": null,
-  "buildCommand": "",
-  "outputDirectory": "public"
-}
