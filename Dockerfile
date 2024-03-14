@@ -1,9 +1,9 @@
 FROM golang:1.18.2-alpine3.16 AS base
 RUN apk update
-WORKDIR /src/posts_and_rabbitmq
+WORKDIR /src/social-networking-posts-and-rabbitmq
 COPY go.mod go.sum ./
 COPY . .
-RUN go build -o posts_and_rabbitmq ./cmd/api
+RUN go build -o posts_and_rabbitmq .
 
 FROM alpine:3.16 as binary
 COPY --from=base /src/posts_and_rabbitmq/posts_and_rabbitmq .
