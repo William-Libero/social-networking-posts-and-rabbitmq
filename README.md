@@ -1,4 +1,4 @@
-# Social Network API
+# Go API - Social Network Project
 
 <p align="center">
   <a href="https://go.dev/" target="blank"><img src="https://go.dev/images/go-logo-white.svg" width="200" alt="Go Logo" /></a>
