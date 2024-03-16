@@ -11,8 +11,8 @@ This project implements a REST API in Go that serves as a backend for a social n
 
 ## Main Features
 
-- **Search Posts**: Users can search for posts based on specific criteria.
+- **Fetch Posts**: Users can see posts.
 - **Create Posts**: Users can create new posts.
 - **Like Posts**: Users can like posts.
 - **Real-time Communication**: Messages are published in a RabbitMQ queue to create and like posts, enabling real-time updates.
-- **Microservices Architecture**: Another API, developed in Nest.js, consumes messages from the RabbitMQ queue to handle post creation and liking.
+- **Microservices Architecture**: Another API, developed in Nest.js (<a href="https://github.com/William-Libero/social-networking-posts-service" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="75" alt="Nest Logo" /></a>), consumes messages from the RabbitMQ queue to handle post creation and liking.
