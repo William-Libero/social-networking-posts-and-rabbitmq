@@ -6,6 +6,7 @@
 </p>
 
 [![Go Version](https://img.shields.io/badge/Go-1.21-blue.svg)](https://golang.org/)
+[![RabbitMQ](https://img.shields.io/badge/RabbitMQ-v1.9.0-orange.svg)](https://www.rabbitmq.com/)
 
 This project implements a REST API in Go that serves as a backend for a social networking application developed in Next.js. The API enables functionalities such as searching, creating, and liking posts.
 
