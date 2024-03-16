@@ -18,12 +18,13 @@ func Home(w http.ResponseWriter, r *http.Request) {
 func GetPosts(w http.ResponseWriter, r *http.Request) {
 	supabase := db.CreateConection()
 
-	var results []interface{}
+	var results map[string]interface{}
 	err := supabase.DB.From("posts").Select("*").Execute(&results)
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(results)
+	json.NewEncoder(w).Encode(results)
 }
 
 func LikePost(w http.ResponseWriter, r *http.Request) {
