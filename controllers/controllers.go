@@ -11,6 +11,13 @@ import (
 	"github.com/gorilla/mux"
 )
 
+type Post struct {
+	CreatedAt   string `json:"created_at"`
+	Description string `json:"description"`
+	Title       string `json:"title"`
+	Likes       int    `json:"likes"`
+}
+
 func Home(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Hello World!")
 }
@@ -18,13 +25,20 @@ func Home(w http.ResponseWriter, r *http.Request) {
 func GetPosts(w http.ResponseWriter, r *http.Request) {
 	supabase := db.CreateConection()
 
-	var results map[string]interface{}
+	var results []interface{}
 	err := supabase.DB.From("posts").Select("*").Execute(&results)
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(results)
-	json.NewEncoder(w).Encode(results)
+
+	output := make([]string, len(results))
+	for i := 0; i < len(results); i += 1 {
+		jsonBytes, _ := json.Marshal(results[i])
+		fmt.Println(string(jsonBytes))
+		output = append(output, string(jsonBytes))
+	}
+
+	json.NewEncoder(w).Encode(output)
 }
 
 func LikePost(w http.ResponseWriter, r *http.Request) {
