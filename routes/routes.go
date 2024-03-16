@@ -13,6 +13,7 @@ func HandleRoutes() {
 	r := mux.NewRouter()
 	r.Use(middlewares.ContentTypeMiddleWare)
 	r.HandleFunc("/", controllers.Home).Methods("Get")
+	r.HandleFunc("/getPosts", controllers.GetPosts).Methods("Get")
 	r.HandleFunc("/likePost/{id}", controllers.LikePost).Methods("Post")
 	r.HandleFunc("/createPost", controllers.CreatePost).Methods("Post")
 	http.ListenAndServe(":8000", handlers.CORS(handlers.AllowedOrigins([]string{"*"}))(r))
