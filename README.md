@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://go.dev/" target="blank"><img src="https://go.dev/images/go-logo-white.svg" width="200" alt="Go Logo" /></a>
   <a href="https://www.rabbitmq.com/" target="blank"><img src="https://www.rabbitmq.com/img/rabbitmq-logo-with-name.svg" width="200" alt="Go Logo" /></a>
-  <a href="https://hub.docker.com/"><img src="https://logopng.com.br/logos/docker-27.png" width="200" alt="Go Logo" /></a>
+  <a href="https://hub.docker.com/"><img src="https://logopng.com.br/logos/docker-27.png" width="150" alt="Go Logo" /></a>
 </p>
 
 [![Go Version](https://img.shields.io/badge/Go-1.21-blue.svg)](https://golang.org/)
