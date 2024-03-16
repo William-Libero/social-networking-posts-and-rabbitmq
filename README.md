@@ -11,7 +11,7 @@
 
 This project implements a REST API in Go that serves as a backend for a social networking application developed in Next.js. The API enables functionalities such as searching, creating, and liking posts.<br />
 The posts are ultimately stored in a Supabase database.<br />
-Deploy was made using Docker in <a href="https://render.com/" target="blank">Render.com</a>
+Deployed in <a href="https://render.com/" target="blank">Render.com</a> using Docker.
 
 ## Main Features
 
