@@ -3,13 +3,15 @@
 <p align="center">
   <a href="https://go.dev/" target="blank"><img src="https://go.dev/images/go-logo-white.svg" width="200" alt="Go Logo" /></a>
   <a href="https://www.rabbitmq.com/" target="blank"><img src="https://www.rabbitmq.com/img/rabbitmq-logo-with-name.svg" width="200" alt="Go Logo" /></a>
+  <a href="https://hub.docker.com/"><img src="https://th.bing.com/th/id/OIP.uhxfs44Jrip6GoKECxLHyQHaFO?rs=1&pid=ImgDetMain" width="200" alt="Go Logo" /></a>
 </p>
 
 [![Go Version](https://img.shields.io/badge/Go-1.21-blue.svg)](https://golang.org/)
 [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-v1.9.0-orange.svg)](https://www.rabbitmq.com/)
 
-This project implements a REST API in Go that serves as a backend for a social networking application developed in Next.js. The API enables functionalities such as searching, creating, and liking posts.
-The posts are ultimately stored in a Supabase database.
+This project implements a REST API in Go that serves as a backend for a social networking application developed in Next.js. The API enables functionalities such as searching, creating, and liking posts.<br />
+The posts are ultimately stored in a Supabase database.<br />
+Deploy was made using Docker in <a href="https://render.com/" target="blank">Render.com</a>
 
 ## Main Features
 
